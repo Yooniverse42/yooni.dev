@@ -1,0 +1,25 @@
+.nav {
+  margin: 0;
+}
+
+.wrapper {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.link:link,
+.link:visited {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-secondary);
+}
+
+.link:active {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-semibold);
+}
