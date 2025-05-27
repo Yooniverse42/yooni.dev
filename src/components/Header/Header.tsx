@@ -13,7 +13,7 @@ export default function Header() {
           </span>
           <Link to={'/'} className={styles.moveHome}>
             <img
-              src="/android-chrome-512x512.png"
+              src="/favicons/android-chrome-512x512.png"
               alt="about으로 이동"
               className={styles.moveHomeImg}
             />
