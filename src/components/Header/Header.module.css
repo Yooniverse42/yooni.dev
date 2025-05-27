@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--color-tertiary);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.head {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.moveHome {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.moveHomeImg {
+  width: 100%;
+}
