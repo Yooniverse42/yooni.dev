@@ -10,7 +10,7 @@ const navList = [
 
 export default function NavMenu() {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.container}>
       <ul role="menubar" className={styles.wrapper}>
         {navList.map(([to, title]) => (
           <li key={to} role="none" className={styles.list}>
