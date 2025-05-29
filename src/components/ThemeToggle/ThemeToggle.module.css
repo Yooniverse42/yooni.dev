@@ -1,0 +1,8 @@
+.toggle:focus {
+  outline: none;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid #0084ff;
+  border-radius: var(--border-radius-sm);
+}
