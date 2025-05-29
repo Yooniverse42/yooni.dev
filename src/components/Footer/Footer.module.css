@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 1rem;
   border-top: 3px solid var(--color-tertiary);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 .linkWrapper {
