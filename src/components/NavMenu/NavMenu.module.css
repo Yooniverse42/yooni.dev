@@ -3,9 +3,10 @@
 }
 
 .wrapper {
+  width: 300px;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 .link:link,
