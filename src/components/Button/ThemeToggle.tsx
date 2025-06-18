@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
-import styles from '@/components/ThemeToggle/ThemeToggle.module.css';
+import styles from '@/components/Button/Button.module.css';
 
 export default function ThemeToggle() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -43,6 +43,7 @@ export default function ThemeToggle() {
         isDarkMode ? '라이트모드로 변경' : '다크모드로 변경'
       }`}
       className={styles.toggle}
+      size={30}
     />
   );
 }
