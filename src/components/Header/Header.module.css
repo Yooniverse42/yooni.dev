@@ -10,18 +10,33 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 120;
   display: flex;
   flex-flow: column nowrap;
   align-items: start;
   width: 40%;
+  min-width: 200px;
   height: 100vh;
-  padding: var(--space-xxl) var(--space-md) var(--space-md);
+  padding: var(--space-xxl) var(--space-lg) var(--space-md);
   background-color: var(--color-bg-tertiary);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.dimmed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: pink;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .floatMenu {
   position: relative;
-  z-index: 99;
+  z-index: 130;
 }
 
 .navMenuWrapper {
@@ -57,7 +72,7 @@
   justify-content: center;
 }
 
-.themeToggleWrapper {
+.themeToggleWrapperDesk {
   justify-content: flex-end;
 }
 
