@@ -3,8 +3,8 @@ import clsx from 'clsx';
 
 const footerLink = [
   ['https://github.com', 'Github', '/icons/social-github.svg'],
-  ['', 'Instagram', '/icons/social-instagram.svg'],
   ['', 'Notion', '/icons/social-notion.svg'],
+  ['https://velog.io/@yxxnicode/posts', 'Velog', '/icons/social-velog.svg'],
   ['', 'Kakao Open Chat', '/icons/social-kakao.svg'],
 ];
 
@@ -18,7 +18,9 @@ export default function Footer() {
           </a>
         ))}
       </div>
-      <p className={styles.copyright}>&#169; 2025 Jiyun Kim</p>
+      <p className={styles.copyright}>
+        &#169; 2025 Jiyun Kim. All rights reserved.
+      </p>
     </footer>
   );
 }
