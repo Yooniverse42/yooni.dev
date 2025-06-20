@@ -1,4 +1,4 @@
-.section01 {
+.profileSection {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -13,7 +13,7 @@
   object-position: top;
 }
 
-.section01Desc {
+.introduction {
   flex-flow: column nowrap;
 }
 
@@ -29,7 +29,7 @@
   margin: var(--space-xxl) 0;
 }
 
-.section02 {
+.valuesSection {
   display: flex;
   gap: var(--space-lg);
   flex-flow: column nowrap;
@@ -42,7 +42,7 @@
 }
 
 @media (max-width: 800px) {
-  .section02 {
+  .valuesSection {
     align-items: center;
   }
 
