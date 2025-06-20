@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 50%;
+}
+
+.icon {
+  width: 3rem;
+}
+
+.titleWrapper {
+  word-break: keep-all;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  .titleWrapper {
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-right: 10%;
+  }
+
+  .responsiveTitle {
+    padding-right: 0;
+    padding-left: 10%;
+  }
+
+  .descWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .iconWrapper {
+    order: 1;
+  }
+}
