@@ -2,10 +2,10 @@ import styles from '@/components/Footer/Footer.module.css';
 import clsx from 'clsx';
 
 const footerLink = [
-  ['https://github.com', 'Github', '/icons/social-github.svg'],
-  ['', 'Notion', '/icons/social-notion.svg'],
-  ['https://velog.io/@yxxnicode/posts', 'Velog', '/icons/social-velog.svg'],
-  ['', 'Kakao Open Chat', '/icons/social-kakao.svg'],
+  ['https://github.com', 'Github', 'social-github'],
+  ['', 'Notion', 'social-notion'],
+  ['https://velog.io/@yxxnicode', 'Velog', 'social-velog'],
+  ['', 'Kakao Open Chat', 'social-kakao'],
 ];
 
 export default function Footer() {
@@ -13,8 +13,15 @@ export default function Footer() {
     <footer className={clsx(styles.container, 'flexCenter')}>
       <div className={clsx(styles.linkWrapper, 'flexCenter')}>
         {footerLink.map(([url, name, img]) => (
-          <a href={url} key={name} target="_blank" rel="noopener noreferer">
-            <img src={img} alt="" className={styles.image} />
+          <a href={url} key={name} target="_blank" rel="noopener noreferrer">
+            <svg
+              width="24"
+              height="24"
+              className={styles.icon}
+              style={{ color: 'var(--color-text-secondary)' }}
+            >
+              <use href={`/icons/stack.svg#${img}`} />
+            </svg>
           </a>
         ))}
       </div>
