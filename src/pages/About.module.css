@@ -1,0 +1,53 @@
+.section01 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.profile {
+  width: 12rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.section01Desc {
+  flex-flow: column nowrap;
+}
+
+.icon {
+  width: 1rem;
+  margin-left: var(--space-xxs);
+}
+
+.sectionLine {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--color-bg-tertiary);
+  margin: var(--space-xxl) 0;
+}
+
+.section02 {
+  display: flex;
+  gap: var(--space-lg);
+  flex-flow: column nowrap;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: var(--space-xxl);
+  flex-flow: row nowrap;
+}
+
+@media (max-width: 800px) {
+  .section02 {
+    align-items: center;
+  }
+
+  .cardWrapper {
+    gap: var(--space-lg);
+    flex-flow: column nowrap;
+  }
+}
