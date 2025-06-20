@@ -85,16 +85,24 @@ body {
   font-family: var(--font-stack);
   line-height: var(--line-height);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   scroll-behavior: smooth;
 }
 
+.rootLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
+  flex: 1;
+  width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: var(--space-xxl) var(--space-md);
+  padding: calc(var(--space-xxl) + 72px) var(--space-md) var(--space-xxl);
 }
 
 header,
@@ -123,17 +131,17 @@ footer {
 }
 
 .mobileOnly {
-  display: flex;
-}
-.desktopOnly {
   display: none;
 }
+.desktopOnly {
+  display: flex;
+}
 
-@media (min-width: 801px) {
+@media (max-width: 800px) {
   .mobileOnly {
-    display: none;
+    display: flex;
   }
   .desktopOnly {
-    display: flex;
+    display: none;
   }
 }

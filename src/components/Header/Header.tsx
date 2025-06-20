@@ -44,7 +44,10 @@ export default function Header() {
         </div>
         {isOpen && (
           <>
-            <div className={styles.dimmed} onClick={() => setOpen(false)}></div>
+            <div
+              className={clsx(styles.dimmed, 'mobileOnly')}
+              onClick={() => setOpen(false)}
+            ></div>
             <div className={clsx(styles.openMenu, 'mobileOnly')}>
               <div className={clsx(styles.navMenuWrapper, 'mobileOnly')}>
                 <NavMenu onClose={() => setOpen(false)} />

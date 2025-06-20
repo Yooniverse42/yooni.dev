@@ -26,16 +26,12 @@
   color: var(--color-text-secondary);
 }
 
-.active {
-  color: var(--color-primary);
-}
-
 .link:hover {
   color: var(--color-tertiary);
 }
 
 .link:active,
 .active {
-  color: var(--color-text-primary);
-  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
 }
