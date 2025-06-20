@@ -7,36 +7,39 @@
 .wrapper {
   flex-flow: nowrap column;
   font-weight: var(--font-weight-medium);
+  gap: var(--space-lg);
 }
 
 .invalidPath {
   gap: var(--space-xs);
-  padding: var(--space-sm);
-  margin: var(--space-md);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
 }
 .invalidPath > img {
-  width: 2rem;
+  width: 2.5rem;
+}
+
+.desc {
+  text-align: center;
 }
 
 .toAbout {
   padding: var(--space-xs) var(--space-sm);
-  margin-top: var(--space-md);
   border: 1px solid var(--color-primary);
   border-radius: 2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  color: var(--color-accent);
+  color: var(--color-text-secondary);
   background-color: var(--color-bg-primary);
 }
 
 .toAbout:hover {
   scale: 1.05;
-  color: var(--color-secondary);
+  color: var(--color-text-primary);
   background-color: var(--color-bg-tertiary);
 }
 
 .toAbout:active {
   font-weight: var(--font-weight-semibold);
-  color: var(--color-accent);
+  color: var(--color-text-primary);
 }
