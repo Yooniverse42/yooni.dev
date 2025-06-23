@@ -102,13 +102,7 @@ body {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: calc(var(--space-xxl) + 72px) var(--space-md) var(--space-xxl);
-}
-
-header,
-footer {
-  width: 100%;
-  padding: 0 var(--space-md);
+  padding: calc(var(--space-lg) + 72px) var(--space-md) var(--space-lg);
 }
 
 .sr-only {
