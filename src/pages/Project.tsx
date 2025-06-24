@@ -1,3 +1,5 @@
+import ProjectCard from '@/components/ProjectCard/ProjectCard';
+
 export default function Project() {
-  return <div>project.</div>;
+  return <ProjectCard />;
 }
