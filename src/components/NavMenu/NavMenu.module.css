@@ -3,7 +3,6 @@
 }
 
 .wrapperDesk {
-  list-style: none;
   display: flex;
   gap: var(--space-sm);
 
@@ -13,7 +12,6 @@
 }
 
 .wrapperMobile {
-  list-style: none;
   display: flex;
   gap: var(--space-sm);
   flex-flow: column nowrap;

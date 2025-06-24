@@ -78,6 +78,10 @@ a:visited {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 html,
 body {
   margin: 0;
