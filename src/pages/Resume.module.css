@@ -67,3 +67,9 @@
   padding: var(--space-xs) var(--space-sm);
   border-radius: 1rem;
 }
+
+@media (max-width: 800px) {
+  .introduceWrapper {
+    flex-flow: column nowrap;
+  }
+}
