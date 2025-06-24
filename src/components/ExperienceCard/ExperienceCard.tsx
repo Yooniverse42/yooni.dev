@@ -50,7 +50,11 @@ export default function ExperienceCard({
         </h5>
         <p className={styles.period}>{period(date)}</p>
       </header>
-      <p className={styles.desc}>{desc}</p>
+      {desc?.map((data, idx) => (
+        <p key={idx} className={styles.desc}>
+          {data}
+        </p>
+      ))}
     </li>
   );
 }
