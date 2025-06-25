@@ -58,6 +58,7 @@
 }
 
 .subTitle {
+  font-size: var(--font-size-xxs);
   font-weight: var(--font-weight-medium);
   color: var(--color-primary);
   white-space: nowrap;

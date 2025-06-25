@@ -7,6 +7,7 @@ interface ExperienceCardProps {
   date: string;
   desc?: string[];
   edu?: boolean;
+  className?: string;
 }
 
 export default function ExperienceCard({
@@ -15,6 +16,7 @@ export default function ExperienceCard({
   date,
   desc,
   edu = false,
+  className,
 }: ExperienceCardProps) {
   const period = (date: string) => {
     const split = date.split(' ');
@@ -42,12 +44,12 @@ export default function ExperienceCard({
       </header>
     </li>
   ) : (
-    <li className={styles.container}>
+    <li className={clsx(styles.container, className)}>
       <header className={clsx(styles.header, styles.cardHeader)}>
-        <h5 className={styles.headingWrapper}>
+        <h4 className={styles.headingWrapper}>
           <p className={styles.title}>{title}</p>
           <p className={styles.subTitle}>{subTitle}</p>
-        </h5>
+        </h4>
         <p className={styles.period}>{period(date)}</p>
       </header>
       {desc?.map((data, idx) => (
