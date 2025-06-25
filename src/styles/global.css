@@ -93,6 +93,7 @@ body {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 .rootLayout {
