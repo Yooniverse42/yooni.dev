@@ -11,6 +11,10 @@
   gap: var(--space-lg);
 }
 
+.icon {
+  color: var(--color-text-secondary);
+}
+
 .icon:hover {
   scale: 1.1;
 }

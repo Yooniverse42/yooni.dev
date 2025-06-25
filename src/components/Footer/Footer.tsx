@@ -1,5 +1,6 @@
 import styles from '@/components/Footer/Footer.module.css';
 import clsx from 'clsx';
+import Icon from '@/components/Icon/Icon';
 
 const footerLink = [
   ['https://github.com', 'Github', 'social-github'],
@@ -14,14 +15,7 @@ export default function Footer() {
       <div className={clsx(styles.linkWrapper, 'flexCenter')}>
         {footerLink.map(([url, name, img]) => (
           <a href={url} key={name} target="_blank" rel="noopener noreferrer">
-            <svg
-              width="24"
-              height="24"
-              className={styles.icon}
-              style={{ color: 'var(--color-text-secondary)' }}
-            >
-              <use href={`/icons/stack.svg#${img}`} />
-            </svg>
+            <Icon icon={img} size={20} className={styles.icon} />
           </a>
         ))}
       </div>
