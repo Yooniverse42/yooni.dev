@@ -94,6 +94,7 @@ body {
   color: var(--color-text-primary);
   scroll-behavior: smooth;
   cursor: default;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .rootLayout {
@@ -142,5 +143,20 @@ body {
   }
   .desktopOnly {
     display: none;
+  }
+}
+
+.divContainer {
+  position: relative;
+  animation: slideUpFadeIn 1s ease-out;
+}
+@keyframes slideUpFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
