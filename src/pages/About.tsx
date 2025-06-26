@@ -16,7 +16,7 @@ export default function About() {
   }, []);
 
   return (
-    <>
+    <div className="divContainer">
       <section className={styles.profileSection}>
         <h2>Glad you’re here!</h2>
         <img src={myProfile} alt="지윤의 프로필" className={styles.profile} />
@@ -39,6 +39,6 @@ export default function About() {
           <AboutCard icon="face" />
         </div>
       </section>
-    </>
+    </div>
   );
 }

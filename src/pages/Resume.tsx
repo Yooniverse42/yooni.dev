@@ -4,6 +4,9 @@ import { getImage } from '@/utils/getImage';
 import { useEffect, useState } from 'react';
 import { introduceSection } from '@/data';
 import { educationCards, experienceCards } from '@/data/resumeCards';
+import SkillCard from '@/components/SkillCard/SkillCard';
+import clsx from 'clsx';
+import CertificationCard from '@/components/CertificationCard/CertificationCard';
 
 export default function Resume() {
   const [myProfile, setMyProfile] = useState<string | undefined>(undefined);
@@ -19,7 +22,7 @@ export default function Resume() {
   }, []);
 
   return (
-    <>
+    <div className="divContainer">
       <div className={styles.resume}>
         <h2>
           김지윤
@@ -47,7 +50,7 @@ export default function Resume() {
           </section>
           <section className={styles.sectionWrapper}>
             <h3 className={styles.title}>Experience</h3>
-            <ul>
+            <div className={styles.experienceWrapper}>
               {experienceCards.map((card, idx) => (
                 <ExperienceCard
                   key={idx}
@@ -55,15 +58,16 @@ export default function Resume() {
                   subTitle={card.subTitle}
                   date={card.date}
                   desc={card.desc}
+                  className={styles.cardMotion}
                 />
               ))}
-            </ul>
+            </div>
           </section>
           <section className={styles.sectionWrapper}>
             <h3 className={styles.title}>Education</h3>
-            <div className={styles.educationWrapper}>
+            <div className={clsx(styles.educationWrapper, styles.cardMotion)}>
               <section>
-                <h4>University</h4>
+                <h4 className={styles.eduTitle}>University</h4>
                 <ul>
                   {eduUniversity.map((card) => (
                     <ExperienceCard
@@ -76,7 +80,7 @@ export default function Resume() {
                 </ul>
               </section>
               <section>
-                <h4>High School</h4>
+                <h4 className={styles.eduTitle}>High School</h4>
                 <ul>
                   <ExperienceCard
                     title={eduHighSchool.title}
@@ -90,12 +94,16 @@ export default function Resume() {
           </section>
           <section className={styles.sectionWrapper}>
             <h3 className={styles.title}>Skills</h3>
+            <div className={clsx(styles.skillWrapper, styles.cardMotion)}>
+              <SkillCard />
+            </div>
           </section>
           <section className={styles.sectionWrapper}>
             <h3 className={styles.title}>Certifications</h3>
+            <CertificationCard className={styles.cardMotion} />
           </section>
         </div>
       </div>
-    </>
+    </div>
   );
 }
