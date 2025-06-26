@@ -1,4 +1,4 @@
-import type { ExperienceCardProps } from '@/types';
+import type { ExperienceCardProps, SkillCardsData } from '@/types';
 
 export const introduceSection = [
   '안녕하세요, 함께하는 가치를 소중히 여기는 개발자 김지윤 입니다.',
@@ -29,7 +29,7 @@ export const educationCards: Record<string, ExperienceCardProps[]> = {
     },
     {
       title: '부산가톨릭대학교',
-      subTitle: '환경공학과 졸업',
+      subTitle: '환경공학과 졸업 (4.12 / 4.5)',
       date: '2016.03 ~ 2020.02',
       edu: true,
     },
@@ -43,3 +43,78 @@ export const educationCards: Record<string, ExperienceCardProps[]> = {
     },
   ],
 };
+
+export const skillCards: SkillCardsData[] = [
+  {
+    title: 'Frontend Development',
+    skill: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Vite'],
+    icon: 'icon-frontend',
+  },
+  {
+    title: 'Styling & UI',
+    skill: [
+      'Sass',
+      'Module CSS',
+      'Tailwind CSS',
+      'Styled Components',
+      'shadcn/ui',
+    ],
+    icon: 'icon-styling',
+  },
+  {
+    title: 'State Management',
+    skill: ['Zustand', 'Context API', 'TanStack Query'],
+    icon: 'icon-state',
+  },
+  {
+    title: 'Animation & Motion',
+    skill: ['Framer Motion', 'GSAP'],
+    icon: 'icon-motion',
+  },
+  {
+    title: 'Backend & Database',
+    skill: ['Supabase', 'Node.js'],
+    icon: 'icon-backend',
+  },
+  {
+    title: 'Development & Collaboration',
+    skill: [
+      'Git/GitHub',
+      'VS Code',
+      'ESLint',
+      'Prettier',
+      'Figma',
+      'Notion',
+      'Slack',
+    ],
+    icon: 'icon-collaboration',
+  },
+];
+
+export const certifications = [
+  {
+    name: '정보처리기사',
+    certDate: '2024.03(필기합격)',
+    certIssuer: '한국산업인력공단',
+  },
+  {
+    name: '산업안전기사',
+    certDate: '2023.09',
+    certIssuer: '한국산업인력공단',
+  },
+  {
+    name: '2종보통운전면허',
+    certDate: '2020.06',
+    certIssuer: '경찰청(운전면허시험관리단)',
+  },
+  {
+    name: '대기환경기사',
+    certDate: '2019.12',
+    certIssuer: '한국산업인력공단',
+  },
+  {
+    name: '수질환경기사',
+    certDate: '2019.08',
+    certIssuer: '한국산업인력공단',
+  },
+];
