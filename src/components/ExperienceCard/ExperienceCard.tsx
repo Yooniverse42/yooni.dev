@@ -1,14 +1,6 @@
 import styles from '@/components/ExperienceCard/ExperienceCard.module.css';
 import clsx from 'clsx';
-
-interface ExperienceCardProps {
-  title: string;
-  subTitle: string;
-  date: string;
-  desc?: string[];
-  edu?: boolean;
-  className?: string;
-}
+import type { ExperienceCardProps } from '@/types';
 
 export default function ExperienceCard({
   title,
@@ -44,7 +36,7 @@ export default function ExperienceCard({
       </header>
     </li>
   ) : (
-    <li className={clsx(styles.container, className)}>
+    <article className={clsx(styles.container, className)}>
       <header className={clsx(styles.header, styles.cardHeader)}>
         <h4 className={styles.headingWrapper}>
           <p className={styles.title}>{title}</p>
@@ -57,6 +49,6 @@ export default function ExperienceCard({
           {data}
         </p>
       ))}
-    </li>
+    </article>
   );
 }
