@@ -18,3 +18,19 @@ export interface ExperienceCardProps {
   desc?: string[];
   edu?: boolean;
 }
+
+export interface SkillCardsData {
+  title: string;
+  skill: string[];
+  icon: string;
+}
+
+// components
+export interface ExperienceCardProps {
+  title: string;
+  subTitle: string;
+  date: string;
+  desc?: string[];
+  edu?: boolean;
+  className?: string;
+}

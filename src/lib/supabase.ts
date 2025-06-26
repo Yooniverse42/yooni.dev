@@ -19,10 +19,3 @@ if (!supabaseAnonKey) {
 
 // Supabase 클라이언트 생성
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
-
-// 데이터베이스 타입 정의
-export interface VisitorStats {
-  id: number;
-  count: number;
-  created_at: string;
-}
